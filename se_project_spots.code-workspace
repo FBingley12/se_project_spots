@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../coffee-project/se_project_coffeeshop/vendor"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "se_project_spots"
+  }
+}
