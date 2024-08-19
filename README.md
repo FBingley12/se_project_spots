@@ -14,4 +14,4 @@ Site for sharing images, liking images, and detailing a biography.
 
 ### Depolyment
 
-GitHub delpoyemnt :
+GitHub delpoyemnt : https://fbingley12.github.io/se_project_spots/
