@@ -2,7 +2,7 @@
 
 ## Description
 
-Site for
+Site for sharing images, liking images, and detailing a biography.
 
 ### Tech
 
@@ -13,3 +13,5 @@ Site for
 - Git
 
 ### Depolyment
+
+GitHub delpoyemnt :
