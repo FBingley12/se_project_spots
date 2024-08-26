@@ -20,3 +20,10 @@
     grid-template-columns: repeat(auto-fit, 288px);
   }
 }
+
+@media screen and (max-width: 320px) {
+  .cards__list {
+    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
+}

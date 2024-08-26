@@ -39,3 +39,43 @@
   overflow: hidden;
   max-width: 353px;
 }
+
+@media screen and (max-width: 320px) {
+  .card__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 288px;
+  }
+
+  .card__title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+  }
+
+  .card__like-btn {
+    width: 20px;
+    height: 18px;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .card__description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .cards__list {
+    gap: 20px;
+  }
+}

@@ -52,6 +52,7 @@
   border: none;
   background-color: transparent;
   margin-right: auto;
+
   display: flex;
   cursor: pointer;
   color: #212121;
@@ -121,5 +122,47 @@
   .profile__add-btn {
     margin: 0;
     width: 100%;
+  }
+  .profile__edit-btn {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    flex-direction: column;
+    max-width: 288px;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .profile__avatar {
+    margin: 0 0 12px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .profile__name {
+    font-size: 20px;
+    margin: 0 0 6px;
+    max-width: 288px;
+  }
+
+  .profile__description {
+    margin: 0 0 32px;
+    max-width: 288px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .profile__column {
+    margin: 0 0 20px;
+  }
+
+  .profile__edit-btn {
+    margin: auto;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
