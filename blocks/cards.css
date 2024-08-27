@@ -14,10 +14,10 @@
   gap: 40px 20px;
   padding-bottom: 40px;
 }
-
 @media screen and (max-width: 627px) {
-  .card__list {
+  .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
+    position: relative;
   }
 }
 
@@ -25,5 +25,9 @@
   .cards__list {
     padding-bottom: 20px;
     grid-template-columns: repeat(auto-fit, 288px);
+  }
+
+  .cards__list {
+    gap: 20px;
   }
 }
