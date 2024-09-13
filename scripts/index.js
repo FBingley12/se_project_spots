@@ -1,4 +1,4 @@
-const initalCards = [
+const initialCards = [
   {
     name: "Val Thorens",
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/1-photo-by-moritz-feldmann-from-pexels.jpg",
@@ -50,14 +50,20 @@ function getCardElement(data) {
     .cloneNode(true);
 
   const cardNameElement = cardElement.querySelector(".card__title");
+  const cardImageElement = cardElement.querySelector(".card__image");
 
   cardNameElement.textContent = data.name;
+  cardImageElement.src = data.link;
+  cardImageElement.alt = data.name;
   return cardElement;
 }
 
 editModalNameInput.value = profileName.textContent;
 editModalDescriptionInput.value = profileDescription.textContent;
-editProfileModal.classList.add("modal_opened");
+
+function openModal() {
+  editProfileModal.classList.add("modal_opened");
+}
 
 function closeModal() {
   editProfileModal.classList.remove("modal_opened");
@@ -76,5 +82,5 @@ editFormElement.addEventListener("submit", handleEditFormSubmit);
 
 for (let i = 0; i < initialCards.length; i++) {
   const cardElement = getCardElement(initialCards[i]);
-  cardsList.prepend(cardElement);
+  cardsList.append(cardElement);
 }
