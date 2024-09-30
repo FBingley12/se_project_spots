@@ -81,6 +81,7 @@ function handleAddCardSubmit(evt) {
   cardsList.prepend(cardElement);
 
   closeModal(cardModal);
+  evt.target.reset();
 }
 
 function getCardElement(data) {
