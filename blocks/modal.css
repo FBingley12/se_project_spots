@@ -160,3 +160,30 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 321px) {
+  .modal__submit-btn {
+    max-width: 276px;
+    width: 100%;
+  }
+
+  .modal__input {
+    line-height: 16px;
+    font-size: 16px;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .modal__close_type_preview {
+    top: -42.5px;
+    right: 0;
+  }
+
+  .modal__caption {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}
