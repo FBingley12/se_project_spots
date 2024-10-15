@@ -143,3 +143,26 @@ initialCards.forEach((item) => {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+function closeModalOnEvent(event) {
+  if (event.key === "Escape" && event.type === "keydown") {
+    const openedPopup = document.querySelector(".modal_opened");
+    closeModal(openedPopup);
+  }
+
+  if (event.target.classList.contains("modal")) {
+    closeModal(event.target);
+  }
+}
+
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", closeModalOnEvent);
+  modal.addEventListener("mousedown", closeModalOnEvent);
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", closeModalOnEvent);
+  modal.removeEventListener("mousedown", closeModalOnEvent);
+}
