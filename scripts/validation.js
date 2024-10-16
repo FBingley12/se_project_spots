@@ -70,4 +70,10 @@ const enableValidation = (config) => {
   });
 };
 
+const resetValidation = (formEl, inputList, config) => {
+  inputList.forEach((inputElement) => {
+    hideInputError(formEl, inputElement, config);
+  });
+};
+
 enableValidation(settings);
